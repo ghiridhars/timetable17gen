@@ -30,7 +30,7 @@ def result():
     for x in range (1,9):
         for var in sem1:
             subjects.append(var['S'+str(x)+'name'])
-    return jsonify({'s1': subjects,'teach':returnteachername,'teachid' : returnteacherid})
+    return jsonify({'sem1': subjects,'teach':returnteachername,'teachid' : returnteacherid})
 
 if __name__ == '__main__':
     app.run(debug = True)
